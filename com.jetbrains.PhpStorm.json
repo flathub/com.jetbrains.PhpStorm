@@ -13,10 +13,10 @@
   ],
   "separate-locales": false,
   "finish-args": [
-    "--share=ipc",
-    "--socket=x11",
-    "--share=network",
     "--device=dri",
+    "--share=ipc",
+    "--share=network",
+    "--socket=x11",
     "--filesystem=home",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets",
