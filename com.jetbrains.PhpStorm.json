@@ -18,7 +18,7 @@
     "--share=network",
     "--socket=ssh-auth",
     "--socket=x11",
-    "--filesystem=home",
+    "--filesystem=host",
     "--filesystem=xdg-run/keyring",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets",
