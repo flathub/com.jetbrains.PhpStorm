@@ -30,6 +30,12 @@
         "-Dvapi=false",
         "-Dgtk_doc=false"
       ],
+      "cleanup": [
+        "/bin",
+        "/include",
+        "/share/gir-1.0",
+        "/share/man"
+      ],
       "sources": [
         {
           "type": "git",
