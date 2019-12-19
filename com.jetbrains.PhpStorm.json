@@ -1,97 +1,97 @@
 {
-  "id": "com.jetbrains.PhpStorm",
-  "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "19.08",
-  "sdk": "org.freedesktop.Sdk",
-  "command": "phpstorm",
-  "tags": [
-    "proprietary"
-  ],
-  "separate-locales": false,
-  "finish-args": [
-    "--device=dri",
-    "--share=ipc",
-    "--share=network",
-    "--socket=ssh-auth",
-    "--socket=x11",
-    "--filesystem=home",
-    "--filesystem=xdg-run/keyring",
-    "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets",
-    "--talk-name=org.freedesktop.Flatpak",
-    "--env=PHPSTORM_JDK=/app/extra/phpstorm/jre64"
-  ],
-  "modules": [
-    {
-      "name": "libsecret",
-      "buildsystem": "meson",
-      "config-opts": [
-        "-Dmanpage=false",
-        "-Dvapi=false",
-        "-Dgtk_doc=false"
-      ],
-      "cleanup": [
-        "/bin",
-        "/include",
-        "/lib/pkgconfig",
-        "/share/gir-1.0",
-        "/share/man",
-        "*.la"
-      ],
-      "sources": [
+    "id": "com.jetbrains.PhpStorm",
+    "runtime": "org.freedesktop.Sdk",
+    "runtime-version": "19.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "phpstorm",
+    "tags": [
+        "proprietary"
+    ],
+    "separate-locales": false,
+    "finish-args": [
+        "--device=dri",
+        "--share=ipc",
+        "--share=network",
+        "--socket=ssh-auth",
+        "--socket=x11",
+        "--filesystem=home",
+        "--filesystem=xdg-run/keyring",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=org.freedesktop.Flatpak",
+        "--env=PHPSTORM_JDK=/app/extra/phpstorm/jre64"
+    ],
+    "modules": [
         {
-          "type": "git",
-          "url": "https://gitlab.gnome.org/GNOME/libsecret.git",
-          "tag": "0.19.1",
-          "commit": "f576dfbe50f9aed22802ad0db0356d081f467d7a"
+            "name": "libsecret",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dmanpage=false",
+                "-Dvapi=false",
+                "-Dgtk_doc=false"
+            ],
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/pkgconfig",
+                "/share/gir-1.0",
+                "/share/man",
+                "*.la"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libsecret.git",
+                    "tag": "0.19.1",
+                    "commit": "f576dfbe50f9aed22802ad0db0356d081f467d7a"
+                }
+            ]
+        },
+        {
+            "name": "phpstorm",
+            "buildsystem": "simple",
+            "build-commands": [
+                "unzip phpstorm_logos.zip",
+                "install -Dm0755 phpstorm.sh ${FLATPAK_DEST}/bin/phpstorm",
+                "install -Dm0644 phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
+                "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.appdata.xml",
+                "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "apply_extra.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "phpstorm.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.PhpStorm.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.PhpStorm.appdata.xml"
+                },
+                {
+                    "type": "file",
+                    "url": "https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_logos.zip",
+                    "sha256": "ad12af802e1e273ea7a6bea6d44cf60eb0ef8cae38a91c94ffa553d6e4f2184a"
+                },
+                {
+                    "type": "extra-data",
+                    "filename": "phpstorm.tar.gz",
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2019.3.1.tar.gz",
+                    "sha256": "50d80c2214d8fe2bde7500a48f06428746d1dfbf7af9d2ba0f7a581b41bb179c",
+                    "size": 369911689,
+                    "x-checker-data": {
+                        "type": "jetbrains",
+                        "code": "PS"
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "phpstorm",
-      "buildsystem": "simple",
-      "build-commands": [
-        "unzip phpstorm_logos.zip",
-        "install -Dm0755 phpstorm.sh ${FLATPAK_DEST}/bin/phpstorm",
-        "install -Dm0644 phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
-        "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
-        "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.appdata.xml",
-        "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "path": "apply_extra.sh"
-        },
-        {
-          "type": "file",
-          "path": "phpstorm.sh"
-        },
-        {
-          "type": "file",
-          "path": "com.jetbrains.PhpStorm.desktop"
-        },
-        {
-          "type": "file",
-          "path": "com.jetbrains.PhpStorm.appdata.xml"
-        },
-        {
-          "type": "file",
-          "url": "https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_logos.zip",
-          "sha256": "ad12af802e1e273ea7a6bea6d44cf60eb0ef8cae38a91c94ffa553d6e4f2184a"
-        },
-        {
-          "type": "extra-data",
-          "filename": "phpstorm.tar.gz",
-          "url": "https://download.jetbrains.com/webide/PhpStorm-2019.3.tar.gz",
-          "sha256": "dbb7bf79750b476d2c96e76be6c6082d63c2addffd2694d4d9fa9d6db01162a2",
-          "size": 364044300,
-          "x-checker-data": {
-            "type": "jetbrains",
-            "code": "PS"
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
