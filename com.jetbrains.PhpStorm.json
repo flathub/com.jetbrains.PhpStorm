@@ -33,8 +33,10 @@
       "cleanup": [
         "/bin",
         "/include",
+        "/lib/pkgconfig",
         "/share/gir-1.0",
-        "/share/man"
+        "/share/man",
+        "*.la"
       ],
       "sources": [
         {
