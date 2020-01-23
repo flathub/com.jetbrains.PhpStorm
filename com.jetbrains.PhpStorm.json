@@ -22,31 +22,7 @@
         "--env=PHPSTORM_JDK=/app/extra/phpstorm/jre64"
     ],
     "modules": [
-        {
-            "name": "libsecret",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dmanpage=false",
-                "-Dvapi=false",
-                "-Dgtk_doc=false"
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/pkgconfig",
-                "/share/gir-1.0",
-                "/share/man",
-                "*.la"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libsecret.git",
-                    "tag": "0.19.1",
-                    "commit": "f576dfbe50f9aed22802ad0db0356d081f467d7a"
-                }
-            ]
-        },
+        "shared-modules/libsecret/libsecret.json",
         {
             "name": "phpstorm",
             "buildsystem": "simple",
