@@ -59,9 +59,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2019.3.3.tar.gz",
-                    "sha256": "10057e42f44374485e8d3ee64447edc53001ac9c4733ee29d668060a880a4f0d",
-                    "size": 373532076,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2019.3.4.tar.gz",
+                    "sha256": "b564c25855f96a0d9eab715ae464472365e231bda591b52be988dfbe4d14b1af",
+                    "size": 373678083,
                     "x-checker-data": {
                         "type": "jetbrains",
                         "code": "PS"
