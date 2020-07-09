@@ -29,7 +29,7 @@
             "build-commands": [
                 "unzip phpstorm_logos.zip",
                 "install -Dm0755 phpstorm.sh ${FLATPAK_DEST}/bin/phpstorm",
-                "install -Dm0644 phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "install -Dm0644 phpstorm_logos/icon-phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.appdata.xml",
                 "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra"
@@ -54,14 +54,15 @@
                 {
                     "type": "file",
                     "url": "https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_logos.zip",
-                    "sha256": "ad12af802e1e273ea7a6bea6d44cf60eb0ef8cae38a91c94ffa553d6e4f2184a"
+                    "sha256": "b7258f07fe0c098e667bc00c20e7590bebe9bcf8ca84fa3e976e69d26d980132",
+                    "size": 1112128
                 },
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2020.1.2.tar.gz",
-                    "sha256": "643b82973ca71ba7eefe199b0857a0fbc1465e6199b4f4d2364516112edd8801",
-                    "size": 382897111,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2020.1.3.tar.gz",
+                    "sha256": "a89e833a6929f06965269b81e3335d0866483e54c9acfba3cdd5d08c4ccf8233",
+                    "size": 383355768,
                     "x-checker-data": {
                         "type": "jetbrains",
                         "code": "PS"
