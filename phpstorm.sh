@@ -14,6 +14,5 @@ if [[ -d /usr/lib/sdk/php74 ]]; then
   . /usr/lib/sdk/php74/enable.sh
 fi
 
-exec env JAVA_TOOL_OPTIONS=-Djava.io.tmpdir=${XDG_CACHE_HOME}/tmp/ \
-    TMPDIR=${XDG_CACHE_HOME}/tmp/ \
+exec env TMPDIR=${XDG_RUNTIME_DIR}/app/${FLATPAK_ID} \
     /app/extra/phpstorm/bin/phpstorm.sh "$@"
