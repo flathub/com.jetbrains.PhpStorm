@@ -60,9 +60,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2020.2.3.tar.gz",
-                    "sha256": "305e188be4d5620e78ac96fec7407996c5be296eb02ab16e63670c436bafbd2d",
-                    "size": 417030766,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2020.2.4.tar.gz",
+                    "sha256": "0d6e8b5b9a3ed70968133360a3af80568663a62788343602d4b5246354c82d84",
+                    "size": 416474747,
                     "x-checker-data": {
                         "type": "jetbrains",
                         "code": "PS"
