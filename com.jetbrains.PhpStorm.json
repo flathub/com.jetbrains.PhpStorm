@@ -28,7 +28,6 @@
             "buildsystem": "simple",
             "build-commands": [
                 "unzip phpstorm_logos.zip",
-                "install -Dm0755 phpstorm.sh ${FLATPAK_DEST}/bin/phpstorm",
                 "install -Dm0644 phpstorm_logos/icon-phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.appdata.xml",
@@ -38,10 +37,6 @@
                 {
                     "type": "file",
                     "path": "apply_extra.sh"
-                },
-                {
-                    "type": "file",
-                    "path": "phpstorm.sh"
                 },
                 {
                     "type": "file",
@@ -67,6 +62,21 @@
                         "type": "jetbrains",
                         "code": "PS"
                     }
+                }
+            ]
+        },
+        {
+            "name": "wrapper",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Deditor_binary=/app/extra/phpstorm/bin/phpstorm.sh",
+                "-Dprogram_name=phpstorm",
+                "-Deditor_title=PhpStorm"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "wrapper"
                 }
             ]
         }
