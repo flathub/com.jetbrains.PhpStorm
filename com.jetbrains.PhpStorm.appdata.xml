@@ -20,7 +20,7 @@
             PhpStorm is a PHP IDE that actually ‘gets’ your code.
             It supports PHP 5.3-8.0, provides on-the-fly error prevention,
             best autocompletion &amp; code refactoring, zero configuration debugging,
-            and an extended HTML, CSS, and JavaScript editor.<br>
+            and an extended HTML, CSS, and JavaScript editor.<br/>
             PhpStorm = WebStorm + PHP + DB/SQL
         </p>
         <p>
