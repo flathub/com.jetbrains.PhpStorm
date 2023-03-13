@@ -55,9 +55,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2022.3.2.tar.gz",
-                    "sha256": "7592d18fa1e199087cfd661b64c2fad717840f8ff3e3faf4d88db58bdb397e03",
-                    "size": 637717883,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2022.3.3.tar.gz",
+                    "sha256": "d79a66032dfb85b16cef4ff308eb0161e06a831cee1fa93f2b7ca46fb1dc2ea9",
+                    "size": 637761526,
                     "x-checker-data": {
                         "type": "jetbrains",
                         "code": "PS"
