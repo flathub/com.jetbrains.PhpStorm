@@ -16,6 +16,7 @@
         "--socket=x11",
         "--filesystem=home",
         "--filesystem=xdg-run/keyring",
+        "--talk-name=com.canonical.AppMenu.Registrar",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Flatpak",
