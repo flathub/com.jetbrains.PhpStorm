@@ -99,7 +99,8 @@
                     "tag": "v2022.04",
                     "commit": "55a60d110301e8dd37b631503c3524ab7baaf7aa",
                     "x-checker-data": {
-                        "type": "git"
+                        "type": "git",
+                        "is-important": true
                     }
                 }
             ]
@@ -141,7 +142,8 @@
                     "size": 647736148,
                     "x-checker-data": {
                         "type": "jetbrains",
-                        "code": "PS"
+                        "code": "PS",
+                        "is-main-source": true
                     }
                 }
             ]
