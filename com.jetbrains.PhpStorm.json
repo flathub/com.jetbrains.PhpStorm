@@ -3,7 +3,7 @@
     "runtime": "org.freedesktop.Sdk",
     "runtime-version": "22.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "phpstorm",
+    "command": "entrypoint",
     "tags": [
         "proprietary"
     ],
@@ -22,7 +22,7 @@
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Flatpak",
         "--talk-name=org.gnome.keyring.SystemPrompter",
-        "--env=PHPSTORM_JDK=/app/extra/phpstorm/jre64"
+        "--env=IDEA_PROPERTIES=/app/etc/phpstorm/idea.properties"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
@@ -91,34 +91,29 @@
             ]
         },
         {
-            "name": "zypak",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/refi64/zypak.git",
-                    "tag": "v2022.04",
-                    "commit": "55a60d110301e8dd37b631503c3524ab7baaf7aa",
-                    "x-checker-data": {
-                        "type": "git",
-                        "is-important": true
-                    }
-                }
-            ]
-        },
-        {
             "name": "phpstorm",
             "buildsystem": "simple",
             "build-commands": [
                 "unzip phpstorm_logos.zip",
                 "install -Dm0644 phpstorm_logos/icon-phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
-                "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.appdata.xml",
+                "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
+                "install -Dm0644 -t ${FLATPAK_DEST}/etc/phpstorm/ idea.properties",
+                "install -Dm0755 entrypoint.sh ${FLATPAK_DEST}/bin/entrypoint",
                 "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "path": "apply_extra.sh"
+                    "path": "files/phpstorm/apply_extra.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "files/phpstorm/entrypoint.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "files/phpstorm/idea.properties"
                 },
                 {
                     "type": "file",
@@ -126,7 +121,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "com.jetbrains.PhpStorm.appdata.xml"
+                    "path": "com.jetbrains.PhpStorm.metainfo.xml"
                 },
                 {
                     "type": "file",
