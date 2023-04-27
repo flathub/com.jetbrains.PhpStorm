@@ -112,7 +112,7 @@
                 "unzip phpstorm_logos.zip",
                 "install -Dm0644 phpstorm_logos/icon-phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
-                "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.appdata.xml",
+                "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra"
             ],
             "sources": [
@@ -126,7 +126,7 @@
                 },
                 {
                     "type": "file",
-                    "path": "com.jetbrains.PhpStorm.appdata.xml"
+                    "path": "com.jetbrains.PhpStorm.metainfo.xml"
                 },
                 {
                     "type": "file",
