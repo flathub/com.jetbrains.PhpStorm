@@ -41,15 +41,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gcr/3.41/gcr-3.41.1.tar.xz",
-                    "sha256": "bb7128a3c2febbfee9c03b90d77d498d0ceb237b0789802d60185c71c4bea24f",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "gcr",
-                        "versions": {
-                            "<": "3.90.0"
-                        },
-                        "stable-only": true
-                    }
+                    "sha256": "bb7128a3c2febbfee9c03b90d77d498d0ceb237b0789802d60185c71c4bea24f"
                 }
             ]
         },
@@ -132,9 +124,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2023.1.1.tar.gz",
-                    "sha256": "be824ba2f0a55b8d246becde235a3308106d2115cea814e4b0cc2f3b9a736253",
-                    "size": 648724103,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2023.1.2.tar.gz",
+                    "sha256": "889f531bbe5c6dda9fb4805dbbccd25d3aa4262a97f4ad14cf184db3eaf2d980",
+                    "size": 648815007,
                     "x-checker-data": {
                         "type": "jetbrains",
                         "code": "PS",
