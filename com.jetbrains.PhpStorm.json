@@ -124,9 +124,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2023.2.4.tar.gz",
-                    "sha256": "2045001203c94ae8170c01c4304646eda6a5f39e680c25d205b14cc68960893a",
-                    "size": 660809220,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2023.3.tar.gz",
+                    "sha256": "71ea19a11c1b62e83b4719160b2808f0de412910e3faf20690bfe53778785e2b",
+                    "size": 684073908,
                     "only-arches": [
                         "x86_64"
                     ],
@@ -139,9 +139,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2023.2.4-aarch64.tar.gz",
-                    "sha256": "f8e0b58286bdff8f235b5604d685bd361c91110ca5cc2fcdf9eed6d420e58a8c",
-                    "size": 662175541,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2023.3-aarch64.tar.gz",
+                    "sha256": "14b7203e089512b7d692068688ff59b8c8169f79111a929c94e91bdfdc36d6a0",
+                    "size": 684713143,
                     "only-arches": [
                         "aarch64"
                     ],
