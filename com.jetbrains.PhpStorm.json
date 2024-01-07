@@ -21,8 +21,7 @@
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Flatpak",
-        "--talk-name=org.gnome.keyring.SystemPrompter",
-        "--env=IDEA_PROPERTIES=/app/etc/phpstorm/idea.properties"
+        "--talk-name=org.gnome.keyring.SystemPrompter"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
@@ -90,9 +89,9 @@
                 "install -Dm0644 phpstorm_logos/icon-phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
-                "install -Dm0644 -t ${FLATPAK_DEST}/etc/phpstorm/ idea.properties",
                 "install -Dm0755 entrypoint.sh ${FLATPAK_DEST}/bin/entrypoint",
-                "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra"
+                "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
+                "cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties"
             ],
             "sources": [
                 {
