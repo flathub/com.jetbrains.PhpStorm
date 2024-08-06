@@ -70,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.0.tar.bz2",
-                    "sha256": "9b3cd5226e7597f2fded399a3bc659923351536559e9db0826981bca316494de",
+                    "url": "https://www.gnupg.org/ftp/gcrypt/pinentry/pinentry-1.3.1.tar.bz2",
+                    "sha256": "bc72ee27c7239007ab1896c3c2fae53b076e2c9bd2483dc2769a16902bce8c04",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3643,
@@ -123,9 +123,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.1.4.tar.gz",
-                    "sha256": "c6a9b57ecd8f588af512a1cba389738bd461531cab4f984ed9758abfdada822d",
-                    "size": 846910836,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.1.5.tar.gz",
+                    "sha256": "9bbc296f1f4b7b81855ce0bf0a6ca7e79413815ee6310c55ace3f26a898a80c0",
+                    "size": 846984422,
                     "only-arches": [
                         "x86_64"
                     ],
@@ -138,9 +138,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.1.4-aarch64.tar.gz",
-                    "sha256": "45a11309799d23b1638a87ee4580bd5e8d4f50ea07d5467e99e416ae45a23b06",
-                    "size": 846033800,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.1.5-aarch64.tar.gz",
+                    "sha256": "c8a42ab14c7e2fd442aa963845c7781c462a8dc09900acd45c9276509b38518d",
+                    "size": 846127927,
                     "only-arches": [
                         "aarch64"
                     ],
