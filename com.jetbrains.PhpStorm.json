@@ -123,9 +123,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.1.6.tar.gz",
-                    "sha256": "9aef0793d1a949fa8beec24cae30cff735eb7e1a84676b8b4df2d1ee03658f16",
-                    "size": 847010327,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.2.tar.gz",
+                    "sha256": "2c59d6d41aa0600705d8caedf5aed45f179e47ac85761f9dcd7dcad61e63d839",
+                    "size": 1036055977,
                     "only-arches": [
                         "x86_64"
                     ],
