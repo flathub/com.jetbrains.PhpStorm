@@ -123,9 +123,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.2.tar.gz",
-                    "sha256": "2c59d6d41aa0600705d8caedf5aed45f179e47ac85761f9dcd7dcad61e63d839",
-                    "size": 1036055977,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.2.0.1.tar.gz",
+                    "sha256": "182392496510eed42c7b1f4616e6c9e5b546348ea8c235cc74da131bcbd56d29",
+                    "size": 1036064401,
                     "only-arches": [
                         "x86_64"
                     ],
@@ -138,9 +138,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.2-aarch64.tar.gz",
-                    "sha256": "ea9f4bbb8ad57c2645a057ca1626c72d9f745e607cbf0ee5890e676b3b316f3d",
-                    "size": 1034892046,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.2.0.1-aarch64.tar.gz",
+                    "sha256": "727e654db648da159e9f2ff013fc612cb2b2034dc8090af6b12b22ddc39e53f4",
+                    "size": 1034905759,
                     "only-arches": [
                         "aarch64"
                     ],
