@@ -85,8 +85,7 @@
             "name": "phpstorm",
             "buildsystem": "simple",
             "build-commands": [
-                "unzip phpstorm_logos.zip",
-                "install -Dm0644 phpstorm_logos/icon-phpstorm.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "install -Dm0644 -t {FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm0755 entrypoint.sh ${FLATPAK_DEST}/bin/entrypoint",
@@ -116,9 +115,7 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://resources.jetbrains.com/storage/products/phpstorm/docs/phpstorm_logos.zip",
-                    "sha256": "b7258f07fe0c098e667bc00c20e7590bebe9bcf8ca84fa3e976e69d26d980132",
-                    "size": 1112128
+                    "path": "com.jetbrains.PhpStorm.svg"
                 },
                 {
                     "type": "extra-data",
