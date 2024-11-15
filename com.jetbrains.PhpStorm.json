@@ -156,7 +156,7 @@
             "name": "wrapper",
             "buildsystem": "meson",
             "config-opts": [
-                "-Deditor_binary=/app/extra/phpstorm/bin/phpstorm.sh",
+                "-Deditor_binary=/app/extra/phpstorm/bin/phpstorm",
                 "-Dprogram_name=phpstorm",
                 "-Deditor_title=PhpStorm"
             ],
