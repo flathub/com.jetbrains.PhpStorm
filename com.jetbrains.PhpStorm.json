@@ -156,12 +156,17 @@
             "config-opts": [
                 "-Deditor_binary=/app/extra/phpstorm/bin/phpstorm",
                 "-Dprogram_name=phpstorm-wrapper",
-                "-Deditor_title=PhpStorm"
+                "-Deditor_title=PhpStorm",
+                "-Dfirst_run_template=phpstorm_first_run.txt"
             ],
             "sources": [
                 {
                     "type": "dir",
                     "path": "ide-flatpak-wrapper"
+                },
+                {
+                    "type": "file",
+                    "path": "phpstorm_first_run.txt"
                 }
             ]
         }
