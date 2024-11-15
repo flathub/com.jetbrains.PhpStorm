@@ -23,8 +23,7 @@
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.freedesktop.Flatpak",
-        "--talk-name=org.gnome.keyring.SystemPrompter",
-        "--env=JAVA_HOME=/app/extra/phpstorm/jbr"
+        "--talk-name=org.gnome.keyring.SystemPrompter"
     ],
     "modules": [
         "shared-modules/libsecret/libsecret.json",
