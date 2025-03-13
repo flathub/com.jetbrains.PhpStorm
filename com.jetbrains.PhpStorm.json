@@ -125,9 +125,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.3.4.tar.gz",
-                    "sha256": "9344d68dda2c0062d9f6f03e27e959346f2f2bba2bce9f1c108653090d2dfb85",
-                    "size": 1041160633,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.3.5.tar.gz",
+                    "sha256": "e12efb584eb9b632703d1bee9986d95ac09aceaf76ca40e9188d82b713ff0fc1",
+                    "size": 1041249561,
                     "only-arches": [
                         "x86_64"
                     ],
@@ -140,9 +140,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.3.4-aarch64.tar.gz",
-                    "sha256": "061dcd7f2972d4d9efc74cce29950929e1fdd02531e1f6365551649c8a254b1a",
-                    "size": 1040498037,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2024.3.5-aarch64.tar.gz",
+                    "sha256": "a55b112177db464081139f6b9aec2a7c22b0f069dd70fdb1bfe56fa1a7f33aa4",
+                    "size": 1040565401,
                     "only-arches": [
                         "aarch64"
                     ],
