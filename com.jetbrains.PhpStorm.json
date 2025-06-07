@@ -119,8 +119,7 @@
                     "type": "file",
                     "dest-filename": "com.jetbrains.PhpStorm.svg",
                     "url": "https://resources.jetbrains.com/storage/products/company/brand/logos/PhpStorm_icon.svg",
-                    "sha256": "8598cf9c38dc60596d7ec4e56052b9af69a5a4f407eb057d4c4482635e19bfc7",
-                    "size": 3512
+                    "sha256": "8598cf9c38dc60596d7ec4e56052b9af69a5a4f407eb057d4c4482635e19bfc7"
                 },
                 {
                     "type": "extra-data",
