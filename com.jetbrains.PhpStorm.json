@@ -3,7 +3,7 @@
     "runtime": "org.freedesktop.Sdk",
     "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "entrypoint",
+    "command": "phpstorm-wrapper",
     "tags": [
         "proprietary"
     ],
@@ -90,7 +90,6 @@
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
-                "install -Dm0755 entrypoint.sh ${FLATPAK_DEST}/bin/entrypoint",
                 "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
                 "cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties"
             ],
@@ -98,10 +97,6 @@
                 {
                     "type": "file",
                     "path": "files/phpstorm/apply_extra.sh"
-                },
-                {
-                    "type": "file",
-                    "path": "files/phpstorm/entrypoint.sh"
                 },
                 {
                     "type": "file",
@@ -154,17 +149,23 @@
             ]
         },
         {
-            "name": "wrapper",
+            "name": "ide-flatpak-wrapper",
             "buildsystem": "meson",
             "config-opts": [
                 "-Deditor_binary=/app/extra/phpstorm/bin/phpstorm",
-                "-Dprogram_name=phpstorm",
-                "-Deditor_title=PhpStorm"
+                "-Dprogram_name=phpstorm-wrapper",
+                "-Deditor_title=PhpStorm",
+                "-Dfirst_run_template=phpstorm_first_run.txt",
+                "-Dflagfile_prefix=flatpak-phpstorm"
             ],
             "sources": [
                 {
                     "type": "dir",
-                    "path": "wrapper"
+                    "path": "ide-flatpak-wrapper"
+                },
+                {
+                    "type": "file",
+                    "path": "phpstorm_first_run.txt"
                 }
             ]
         }
