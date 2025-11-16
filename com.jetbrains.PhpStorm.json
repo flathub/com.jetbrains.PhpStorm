@@ -25,6 +25,15 @@
         "--talk-name=org.freedesktop.Flatpak",
         "--talk-name=org.gnome.keyring.SystemPrompter"
     ],
+    "add-extensions": {
+        "com.jetbrains.PhpStorm.tool": {
+            "directory": "tools",
+            "subdirectories": true,
+            "version": "24.08",
+            "add-ld-path": "lib",
+            "no-autodownload": true
+        }
+    },
     "modules": [
         "shared-modules/libsecret/libsecret.json",
         {
