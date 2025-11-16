@@ -101,7 +101,8 @@
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
                 "install -Dm0755 entrypoint.sh ${FLATPAK_DEST}/bin/entrypoint",
                 "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
-                "cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties"
+                "cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties",
+                "mkdir -p /app/tools"
             ],
             "sources": [
                 {
