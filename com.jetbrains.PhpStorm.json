@@ -50,7 +50,6 @@
             "name": "pinentry",
             "cleanup": [
                 "/include",
-                "/lib/debug",
                 "/share/info",
                 "*.a",
                 "*.la"
