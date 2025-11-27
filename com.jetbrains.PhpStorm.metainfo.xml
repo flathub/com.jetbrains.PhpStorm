@@ -13,8 +13,7 @@
 
     <description>
         <p>
-            NOTE: This wrapper is not verified by, affiliated with, or
-            supported by JetBrains s.r.o.
+            **NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.**
         </p>
         <p>
             PhpStorm is a PHP IDE that actually ‘gets’ your code.
@@ -43,8 +42,11 @@
     </screenshots>
 
     <releases>
-        <release version="2025.2.4" date="2025-10-24">
+        <release version="2025.2.5" date="2025-11-21">
             <description></description>
+        </release>
+        <release version="2025.2.4" date="2025-10-24">
+            <description/>
         </release>
         <release version="2025.2.3" date="2025-10-03">
             <description/>

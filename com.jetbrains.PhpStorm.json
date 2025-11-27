@@ -50,7 +50,6 @@
             "name": "pinentry",
             "cleanup": [
                 "/include",
-                "/lib/debug",
                 "/share/info",
                 "*.a",
                 "*.la"
@@ -124,9 +123,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.2.4.tar.gz",
-                    "sha256": "ad2413006344762fb46dc47246e983053b08f763df5c0a2ba0f70ede79a76c3d",
-                    "size": 1143491430,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.2.5.tar.gz",
+                    "sha256": "4f102bb85add2527e46695f3b866c0e315423e19bc45e0adb0de0fe577a1efe6",
+                    "size": 1132531723,
                     "only-arches": [
                         "x86_64"
                     ],
@@ -139,9 +138,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.2.4-aarch64.tar.gz",
-                    "sha256": "60638fee7ed81f75bae931b96d540aa80e8753709f138b60a766a6e29771a3da",
-                    "size": 1140419590,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.2.5-aarch64.tar.gz",
+                    "sha256": "9dbf2ef4f69039f82ed1c4f279a22d5e1cb88051bcf5670e7c4d5bf0263295e9",
+                    "size": 1129461313,
                     "only-arches": [
                         "aarch64"
                     ],
