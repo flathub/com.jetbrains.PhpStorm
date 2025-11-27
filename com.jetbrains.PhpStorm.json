@@ -3,7 +3,7 @@
     "runtime": "org.freedesktop.Sdk",
     "runtime-version": "24.08",
     "sdk": "org.freedesktop.Sdk",
-    "command": "entrypoint",
+    "command": "phpstorm-wrapper",
     "tags": [
         "proprietary"
     ],
@@ -89,37 +89,10 @@
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
                 "install -Dm0644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
-                "install -Dm0755 entrypoint.sh ${FLATPAK_DEST}/bin/entrypoint",
-                "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
+                "install -Dm0755 apply_extra ${FLATPAK_DEST}/bin/apply_extra",
                 "cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties"
             ],
             "sources": [
-                {
-                    "type": "file",
-                    "path": "files/phpstorm/apply_extra.sh"
-                },
-                {
-                    "type": "file",
-                    "path": "files/phpstorm/entrypoint.sh"
-                },
-                {
-                    "type": "file",
-                    "path": "files/phpstorm/idea.properties"
-                },
-                {
-                    "type": "file",
-                    "path": "com.jetbrains.PhpStorm.desktop"
-                },
-                {
-                    "type": "file",
-                    "path": "com.jetbrains.PhpStorm.metainfo.xml"
-                },
-                {
-                    "type": "file",
-                    "dest-filename": "com.jetbrains.PhpStorm.svg",
-                    "url": "https://resources.jetbrains.com/storage/products/company/brand/logos/PhpStorm_icon.svg",
-                    "sha256": "8598cf9c38dc60596d7ec4e56052b9af69a5a4f407eb057d4c4482635e19bfc7"
-                },
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
@@ -149,21 +122,54 @@
                         "code": "PS",
                         "is-main-source": true
                     }
+                },
+                {
+                    "type": "file",
+                    "dest-filename": "com.jetbrains.PhpStorm.svg",
+                    "url": "https://resources.jetbrains.com/storage/products/company/brand/logos/PhpStorm_icon.svg",
+                    "sha256": "8598cf9c38dc60596d7ec4e56052b9af69a5a4f407eb057d4c4482635e19bfc7"
+                },
+                {
+                    "type": "file",
+                    "path": "files/phpstorm/idea.properties"
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.PhpStorm.desktop"
+                },
+                {
+                    "type": "file",
+                    "path": "com.jetbrains.PhpStorm.metainfo.xml"
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "apply_extra",
+                    "commands": [
+                        "tar xzf phpstorm.tar.gz --strip-components=1",
+                        "rm phpstorm.tar.gz"
+                    ]
                 }
             ]
         },
         {
-            "name": "wrapper",
+            "name": "ide-flatpak-wrapper",
             "buildsystem": "meson",
             "config-opts": [
-                "-Deditor_binary=/app/extra/phpstorm/bin/phpstorm",
-                "-Dprogram_name=phpstorm",
-                "-Deditor_title=PhpStorm"
+                "-Deditor_binary=/app/extra/bin/phpstorm",
+                "-Deditor_title=PhpStorm",
+                "-Dfirst_run_template=README.md",
+                "-Dflagfile_prefix=flatpak-phpstorm",
+                "-Dprogram_name=phpstorm-wrapper"
             ],
             "sources": [
                 {
-                    "type": "dir",
-                    "path": "wrapper"
+                    "type": "git",
+                    "url": "https://github.com/flathub/ide-flatpak-wrapper.git",
+                    "commit": "d581fd9b873acbf6fb22899aa388435f6c00f61a"
+                },
+                {
+                    "type": "file",
+                    "path": "README.md"
                 }
             ]
         }
