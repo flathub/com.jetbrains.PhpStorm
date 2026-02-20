@@ -95,9 +95,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.3.2.tar.gz",
-                    "sha256": "5bd3b60d8cc9004b6015befdc5818c50dbe2f323261fea1184d7a82b21ed60ef",
-                    "size": 1054515540,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.3.3.tar.gz",
+                    "sha256": "097ecb81e58b2801587031ee6d7a90b7d4a1cf9115b1c972fdd3301e6cfa86de",
+                    "size": 1056324352,
                     "only-arches": [
                         "x86_64"
                     ],
@@ -110,9 +110,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.3.2-aarch64.tar.gz",
-                    "sha256": "6220c785e4fd65b984ef958b774fbf54b6b577e587cd709c1839163342ce8ff8",
-                    "size": 1049882854,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2025.3.3-aarch64.tar.gz",
+                    "sha256": "b3bf59541cb5cf9eee5111fc10615bf99082d35bfc0a1486a1a97f24dae27045",
+                    "size": 1051691512,
                     "only-arches": [
                         "aarch64"
                     ],
