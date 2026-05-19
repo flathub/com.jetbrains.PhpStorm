@@ -97,9 +97,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2026.1.1.tar.gz",
-                    "sha256": "4ce4a2140a6157f258ad483db41fc102d0068e7e8fd03a5a6073b65b715c0864",
-                    "size": 1066256336,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2026.1.2.tar.gz",
+                    "sha256": "55b5ec7ca6a1a755f8030002d74560844f999314e1a2f9d81c7632be4393b457",
+                    "size": 1060021924,
                     "only-arches": [
                         "x86_64"
                     ],
@@ -112,9 +112,9 @@
                 {
                     "type": "extra-data",
                     "filename": "phpstorm.tar.gz",
-                    "url": "https://download.jetbrains.com/webide/PhpStorm-2026.1.1-aarch64.tar.gz",
-                    "sha256": "7d682ec20510b2d0b2b4030a6a6e2c7338847b23b1544848c52d4ef351ceff22",
-                    "size": 1061302506,
+                    "url": "https://download.jetbrains.com/webide/PhpStorm-2026.1.2-aarch64.tar.gz",
+                    "sha256": "7f43b0baad0e8d5c27a781a3fdd8a23c59fd1751dfe209bf3301f391a6c81f6c",
+                    "size": 1055075386,
                     "only-arches": [
                         "aarch64"
                     ],
