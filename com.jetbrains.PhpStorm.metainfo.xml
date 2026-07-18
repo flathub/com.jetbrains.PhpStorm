@@ -13,9 +13,6 @@
 
     <description>
         <p>
-            **NOTE: This wrapper is not verified by, affiliated with, or supported by JetBrains s.r.o.**
-        </p>
-        <p>
             PhpStorm is a PHP IDE that actually ‘gets’ your code.
             It supports PHP 5.3-8.2, provides on-the-fly error prevention,
             the best autocompletion and code refactoring, zero-configuration debugging,
