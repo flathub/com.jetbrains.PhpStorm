@@ -39,8 +39,12 @@
     </screenshots>
 
     <releases>
-        <release version="2026.2.4" date="2026-10-30">
+        <release version="2026.3" date="2026-11-05">
+            <url type="details">https://youtrack.jetbrains.com/articles/WI-A-231736413</url>
             <description></description>
+        </release>
+        <release version="2026.2.4" date="2026-10-30">
+            <description/>
         </release>
         <release version="2026.2.3" date="2026-09-17">
             <description/>
